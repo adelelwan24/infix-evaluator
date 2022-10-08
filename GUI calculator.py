@@ -1,4 +1,5 @@
 from tkinter import *
+from .SimplerVersion import infixEval       ## currentlly used
 import math 
 
 class Stack:                                # can be replaced by instaling pythonds library ==> from pythonds.basic.stack import Stack
@@ -234,6 +235,6 @@ pi = Button(root,text="pi",font =("serial",10),bg="#789",fg="#fff",command =lamb
 minus = Button(root,text="-",font =("serial",10),bg="#784",fg="#fff",command =lambda:write_number('-')).grid(row=6,column=3,padx=(5,0),sticky=W+E)
 
 
-equal = Button(root,text="=",borderwidth=5,font =("serial",10),bg="#432",fg="#fff",command = Evaluator).grid(row=7,columnspan=4,sticky=W+E)
+equal = Button(root,text="=",borderwidth=5,font =("serial",10),bg="#432",fg="#fff",command = infixEval).grid(row=7,columnspan=4,sticky=W+E)
 
 root.mainloop()
